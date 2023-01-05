@@ -783,7 +783,7 @@ do
             --
             spawn(function()
                 while wait(0.1) do
-                    watermark_title.Text = string.format("PappeeAssist | dev | Ping : " .. tostring(library.shared.ping) .. "ms | FPS : " .. tostring(library.shared.fps), window.name.."Date: "..os.date())
+                    watermark_title.Text = string.format("PappeeAssist | dev | Ping : " .. tostring(library.shared.ping) .. "ms | FPS : " .. tostring(library.shared.fps), window.name)
                     window.watermark:UpdateSize()
                 end
             end)
